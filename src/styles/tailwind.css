@@ -14,19 +14,63 @@
 
 /* Your own custom utilities */
 @layer components {
-  .text-shadow {
-    text-shadow: 1px 1px #afafaf;
+  .viewport {
+    @apply max-w-[1440px] mx-auto relative;
+  }
+
+  /* header */
+  .header-container {
+    @apply w-full flex justify-between items-center py-9 px-10 absolute;
+  }
+
+  .logo-container {
+    @apply p-1;
+  }
+
+  .nav-container {
+    @apply flex justify-between items-center space-x-8 text-lg z-10;
+  }
+
+  .connect-wallet-button {
+    @apply py-2 px-6 border border-[#076AFE] text-[#076AFE] rounded-md cursor-pointer transition-all hover:text-white hover:scale-[1.01];
+    filter: drop-shadow(0px 2px 8px #076afe);
   }
 
   .section-container {
-    @apply min-h-screen flex flex-col justify-center items-center p-2 md:p-4 lg:p-16;
+    @apply flex flex-col space-y-12 items-center justify-center content-center;
   }
 
-  .section-wrapper {
-    @apply px-8 md:px-32 lg:px-56;
+  .button-md {
+    @apply py-4 px-12 font-bold cursor-pointer rounded-md;
   }
 
-  .section-title {
-    @apply text-2xl md:text-5xl font-medium md:leading-normal text-center text-shadow;
+  .primary {
+    @apply bg-[#FEE403] border border-[#FEE403] text-[#141414] hover:bg-[#141414] hover:text-[#FEE403];
   }
+
+  .secondary {
+    @apply bg-[#141414] border border-[#FEE403] text-[#FEE403] hover:bg-[#FEE403] hover:text-[#141414];
+  }
+
+  .footer-container {
+    @apply flex space-x-24 justify-center py-16 px-16;
+  }
+
+  .footer-item {
+    @apply space-y-2;
+  }
+
+  .footer-line {
+    @apply flex justify-between space-x-8;
+  }
+
+  .footer-line-title {
+    @apply text-[#83B5FF];
+  }
+
+  .footer-line-content {
+    @apply text-[#FCFCFC];
+  }
+
+  /* Landing */
 }

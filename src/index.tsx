@@ -5,7 +5,6 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./styles/global.css";
-import "./styles/mouse.css";
 import "./styles/tailwind.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
