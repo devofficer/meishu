@@ -1,4 +1,4 @@
-import { ConnectWallet } from "../ConnectWallet";
+import { Web3Button } from "@web3modal/react";
 
 export const Header = () => {
   return (
@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="nav-container">
         <span>NFT Staking</span>
         <span>Exchange</span>
-        <ConnectWallet />
+        <Web3Button />
       </div>
     </div>
   );
