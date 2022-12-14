@@ -1,0 +1,13 @@
+/* global stylesheet */
+html,
+body {
+  position: relative;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #141414;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
