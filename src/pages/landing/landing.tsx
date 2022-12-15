@@ -1,18 +1,11 @@
 export const Landing = () => {
   return (
-    <div className="relative">
-      <img
-        alt="background"
-        src="assets/images/landing/bg.png"
-        className="w-full -z-10"
-      />
-      <div className="top-0 pt-64 px-[265px] space-y-12 absolute w-full">
-        <h1 className="text-8xl font-bold uppercase text-center">
-          Welcome to Meishu platfrom.
-        </h1>
-        <div className="flex justify-center space-x-8">
-          <div className="button-md primary">Stake my NFT</div>
-          <div className="button-md secondary">Buy $Meishu</div>
+    <div className="page-container">
+      <div className="landing-container">
+        <p className="text-center font-bold text-2xl xl:text-8xl">Welcome to Meishu platfrom.</p>
+        <div className="flex flex-col xl:flex-row space-y-4 xl:space-x-4 xl:space-y-0">
+          <button className="btn-base btn-primary">Stake My NFT</button>
+          <button className="btn-base btn-primary">Buy $Meishu</button>
         </div>
       </div>
     </div>

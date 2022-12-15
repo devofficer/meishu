@@ -1,14 +1,11 @@
-import { Footer } from "./components/footer";
-import { Header } from "./components/header";
+import { Layout } from "./components/layout";
 import { Landing } from "./pages/landing";
 
 function App() {
   return (
-    <div className="viewport">
-      <Header />
+    <Layout>
       <Landing />
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 
