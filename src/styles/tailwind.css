@@ -22,13 +22,18 @@
     ;
   }
 
-  .btn-base {
+  .btn {
     @apply px-10 py-2 rounded-full transition-all hover:scale-[1.05];
   }
 
   .btn-primary {
-    @apply text-white hover:border-brandlesblue;
+    @apply text-white;
     background: linear-gradient(262.43deg, #6730A7 13.4%, #2AD8D6 86.96%);
+  }
+
+  .btn-tools {
+    @apply text-white;
+    background: #0072FF; 
   }
 
   .btn-disabled {
@@ -51,7 +56,7 @@
   }
 
   .nav-container {
-    @apply hidden xl:flex space-x-4 w-fit;
+    @apply hidden xl:flex space-x-4 items-center w-fit;
   }
 
   /* landing container */
