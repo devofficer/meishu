@@ -26,6 +26,10 @@
     @apply px-10 py-2 rounded-full transition-all hover:scale-[1.05];
   }
 
+  .btn-sm {
+    @apply px-5 py-2 rounded-full transition-all hover:scale-[1.02];
+  }
+
   .btn-primary {
     @apply text-white;
     background: linear-gradient(262.43deg, #6730A7 13.4%, #2AD8D6 86.96%);
@@ -52,11 +56,48 @@
   }
 
   .logo {
-    @apply h-6 xl:h-10;
+    @apply h-10 xl:h-24;
   }
 
   .nav-container {
     @apply hidden xl:flex space-x-4 items-center w-fit;
+  }
+
+  /* footer styles */
+  .footer-container {
+    @apply flex flex-col md:flex-row md:justify-between md:px-16 md:py-12;
+  }
+
+  .footer-item {
+    @apply flex flex-col space-y-6;
+  }
+
+  .footer-item-title {
+    @apply font-bold;
+  }
+
+  .footer-item-link {
+    @apply text-brandlesblue;
+  }
+
+  .footer-logo-container {
+    @apply p-[1px] flex flex-col space-y-6 items-center bg-gradient-to-b from-[#0072ff] to-[#00000000] rounded-t-[20px];
+  }
+
+  .footer-logo {
+    @apply h-24 absolute -top-8;
+  }
+
+  .footer-logo-viewport {
+    @apply px-10 py-8 w-full h-full rounded-t-[20px] bg-black relative flex flex-col items-center space-y-4;
+  }
+
+  .footer-price {
+    @apply text-skyblue;
+  }
+
+  .footer-item-group {
+    @apply flex flex-col space-y-6 md:flex-row md:space-x-24 md:space-y-0 w-fit; 
   }
 
   /* landing container */

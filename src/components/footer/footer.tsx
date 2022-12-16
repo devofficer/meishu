@@ -1,39 +1,40 @@
 export const Footer = () => {
   return (
-    <div className="footer-container">
-      <div className="footer-item">
-        <span className="text-[#141414] font-bold">.</span>
-        <div className="footer-line">
-          <span className="footer-line-title">Max Supply</span>
-          <span className="footer-line-content">10000000000</span>
+    <div className="py-8">
+      <div className="footer-container">
+        <div className="footer-logo-container">
+          <div className="footer-logo-viewport">
+            <img className="footer-logo" alt="logo" src="assets/images/header/logo.png" />
+            <div className="h-8"></div>
+            <span className="footer-item-title">Buy Meishu</span>
+            <span className="footer-price">$0.15</span>
+            <button className="btn btn-tools">Let's go</button>
+          </div>
         </div>
-        <div className="footer-line">
-          <span className="footer-line-title">Total Supply</span>
-          <span className="footer-line-content">10000000000</span>
-        </div>
-        <div className="footer-line">
-          <span className="footer-line-title">Circulating Supply</span>
-          <span className="footer-line-content">10000000000</span>
-        </div>
-        <div className="footer-line">
-          <span className="footer-line-title">Total Burned</span>
-          <span className="footer-line-content">10000000000</span>
-        </div>
-        <div className="footer-line">
-          <span className="footer-line-title">Market Cap</span>
-          <span className="footer-line-content">10000000000</span>
+        <div className="footer-item-group">
+          <div className="footer-item">
+            <span className="footer-item-title">Products</span>
+            <div className="footer-item-link">Staking</div>
+            <div className="footer-item-link">Exchange</div>
+          </div>
+          <div className="footer-item">
+            <span className="footer-item-title">About</span>
+            <div className="footer-item-link">Team</div>
+            <div className="footer-item-link">Litepaper</div>
+          </div>
+          <div className="footer-item">
+            <span className="footer-item-title">Commmunity</span>
+            <div className="flex space-x-2">
+              <img alt="telegram" src="assets/images/footer/telegram.png" />
+              <img alt="telegram" src="assets/images/footer/twitter.png" />
+              <img alt="telegram" src="assets/images/footer/youtube.png" />
+              <img alt="telegram" src="assets/images/footer/medium.png" />
+            </div>
+          </div>
         </div>
       </div>
-      <div className="footer-item">
-        <span className="footer-line-content font-bold">Products</span>
-        <div className="footer-line-title">Staking</div>
-        <div className="footer-line-title">Exchange</div>
-      </div>
-      <div className="footer-item">
-        <span className="footer-line-content font-bold">About</span>
-        <div className="footer-line-title">Team</div>
-        <div className="footer-line-title">Litepaper</div>
-      </div>
+      <div className="text-white text-center">MEISHU, all right reserved. 2022</div>
     </div>
+    
   );
 };
