@@ -14,12 +14,13 @@
 
 /* Your own custom utilities */
 @layer components {
+  body {
+    @apply bg-[#0F0F0E] md:bg-black;
+  }
   /* global style */
   .page-container {
     @apply h-screen overflow-hidden rounded-b-xl lg:rounded-b-3xl border-l border-b-2 border-brandlesblue w-full;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      linear-gradient(253.4deg, #0072FF -3.22%, #820DB6 101.86%);
-    ;
+    background: linear-gradient(116.51deg, #32064A 34.19%, #082761 100.93%);
   }
 
   .btn {
@@ -45,6 +46,25 @@
     background: rgba(250, 250, 250, 0.2);
   }
 
+  .text-gradient {
+    background: linear-gradient(94.67deg, #2AD7D6 0%, #6831A8 68.7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .heading1 {
+    @apply text-6xl font-bold;
+  }
+
+  .heading2 {
+    @apply text-7xl font-bold;
+  }
+
+  .bold {
+    @apply font-bold;
+  }
 
   /* header style */
   .header-container {
@@ -56,7 +76,7 @@
   }
 
   .logo {
-    @apply h-10 xl:h-24;
+    @apply h-10;
   }
 
   .nav-container {
@@ -65,11 +85,11 @@
 
   /* footer styles */
   .footer-container {
-    @apply flex flex-col md:flex-row md:justify-between md:px-16 md:py-12;
+    @apply flex flex-col py-12 items-center md:items-start md:flex-row md:justify-between md:px-16;
   }
 
   .footer-item {
-    @apply flex flex-col space-y-6;
+    @apply flex flex-col items-center md:items-start space-y-6;
   }
 
   .footer-item-title {
@@ -81,7 +101,7 @@
   }
 
   .footer-logo-container {
-    @apply p-[1px] flex flex-col space-y-6 items-center bg-gradient-to-b from-[#0072ff] to-[#00000000] rounded-t-[20px];
+    @apply p-[1px] mb-12 md:mb-0 flex flex-col w-fit space-y-6 items-center bg-gradient-to-b from-[#0072ff] to-[#00000000] rounded-t-[20px];
   }
 
   .footer-logo {
@@ -89,7 +109,7 @@
   }
 
   .footer-logo-viewport {
-    @apply px-10 py-8 w-full h-full rounded-t-[20px] bg-black relative flex flex-col items-center space-y-4;
+    @apply px-10 py-8 w-full h-full rounded-b-[20px] md:rounded-b-[0px] rounded-t-[20px] bg-black relative flex flex-col items-center space-y-4;
   }
 
   .footer-price {
@@ -102,6 +122,16 @@
 
   /* landing container */
   .landing-container {
-    @apply h-screen bg-landing flex flex-col items-center justify-center space-y-6;
+    @apply h-screen bg-landing pt-32 flex flex-col space-y-6 items-center md:flex-row md:space-y-0 md:justify-center px-10 md:px-32;
+    background-size: cover;
   }
+
+  .landing-description {
+    @apply space-y-8;
+  }
+
+  .landing-container * {
+    @apply flex-1;
+  }
+
 }

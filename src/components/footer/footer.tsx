@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="footer-container">
         <div className="footer-logo-container">
           <div className="footer-logo-viewport">
-            <img className="footer-logo" alt="logo" src="assets/images/header/logo.png" />
+            <img className="footer-logo" alt="logo" src="assets/images/logo/meishu-token.png" />
             <div className="h-8"></div>
             <span className="footer-item-title">Buy Meishu</span>
             <span className="footer-price">$0.15</span>
