@@ -14,7 +14,7 @@ import { bsc, mainnet, polygon } from "wagmi/chains";
 
 const chains = [bsc, mainnet, polygon];
 
-const id = process.env.REACT_APP_PROJECT_ID;
+// const id = process.env.REACT_APP_PROJECT_ID;
 
 // Wagmi client
 const { provider } = configureChains(chains, [
@@ -34,7 +34,7 @@ function App() {
     <div className="viewport">
       <WagmiConfig client={wagmiClient}>
         <Layout>
-          <Landing/>
+          <Landing />
         </Layout>
       </WagmiConfig>
       <Web3Modal
